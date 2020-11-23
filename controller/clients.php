@@ -1,6 +1,5 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-header("strict-origin-when-cross-origin/json");
 class Clients {
   // Properties
   public $client_id;
