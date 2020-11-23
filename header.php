@@ -155,7 +155,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
-            <a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/adpamo"; ?>" class="nav-link">
+            <a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . ""; ?>" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Clients
@@ -165,7 +165,7 @@
             
           </li>
           <li class="nav-item has-treeview">
-            <a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/adpamo/#!/order"; ?>" class="nav-link">
+            <a href="<?php echo "http://" . $_SERVER['SERVER_NAME'] . "/#!/order"; ?>" class="nav-link">
               <i class="nav-icon fas fa-bookmark"></i>
               <p>
                 Order
