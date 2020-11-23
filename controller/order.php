@@ -5,10 +5,10 @@ class Order{
 
   // Methods
   function index(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "adpamo";
+        $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+        $username = "uoda79man3frv2ey";
+        $password = "7j6L6wOWNiGBz68Bp5TQ";
+        $dbname = "bitkvtrcb83u4zewwxlm";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -49,10 +49,10 @@ class Order{
   
   
   public function get_client_type($type_client){
-      $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "adpamo";
+      $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+        $username = "uoda79man3frv2ey";
+        $password = "7j6L6wOWNiGBz68Bp5TQ";
+        $dbname = "bitkvtrcb83u4zewwxlm";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
