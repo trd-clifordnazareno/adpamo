@@ -46,14 +46,14 @@ app.config(function($routeProvider) {
 
 
 app.controller('get_clients_model', function ($scope, $http, $location, $routeParams) {
-        $http.get("http://adsportalsamplweweb.herokuapp.com/controller/clients.php?load_clients=1")
+        $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?load_clients=1")
                 .then(function (response) {
                     $scope.clients_details = response.data;
                 });
         
 
 $scope.delete_clients = function(a){
-    $http.get("http://adsportalsamplweweb.herokuapp.com/controller/clients.php?client_id="+a)
+    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?client_id="+a)
                 .then(function (response) {
                     //alert(response.data)
                     window.location = "http://localhost/adpamo";
@@ -85,7 +85,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
         
         $scope.update_clients_details = function($clients_id, $clients_name, $clients_address, $clients_number){
             
-            $http.get("http://adsportalsamplweweb.herokuapp.com/controller/clients.php?operation_type=edit_client_details&&client_id_details="+$clients_id+
+            $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?operation_type=edit_client_details&&client_id_details="+$clients_id+
                     "&&client_name_details="+$clients_name+
                     "&&client_address_details="+$clients_address+
                     "&&client_number_details="+$clients_number)
@@ -114,7 +114,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                 $scope.select_clients_walkin = true;
                 
                 
-                $http.get("http://adsportalsamplweweb.herokuapp.com/controller/order.php?operation_type=get_client_type&&client_type=get_client_corporate")
+                $http.get("https://adsportalsamplweweb.herokuapp.com/controller/order.php?operation_type=get_client_type&&client_type=get_client_corporate")
                 .then(function (response) {
                     
                     //alert(response.data)
@@ -128,7 +128,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                 $scope.select_clients_walkin = true;
                 
                 
-                $http.get("http://adsportalsamplweweb.herokuapp.com/controller/order.php?operation_type=get_client_type&&client_type=get_client_regular")
+                $http.get("https://adsportalsamplweweb.herokuapp.com/controller/order.php?operation_type=get_client_type&&client_type=get_client_regular")
                 .then(function (response) {
                     
                     //alert(response.data)
