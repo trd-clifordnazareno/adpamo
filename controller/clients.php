@@ -1,5 +1,6 @@
 <?php
-///header("Content-Type: application/json; charset=UTF-8");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Origin: *");
 class Clients {
   // Properties
   public $client_id;
