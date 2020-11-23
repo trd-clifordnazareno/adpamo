@@ -5,10 +5,10 @@ class Clients {
 
   // Methods
   function index(){
-      $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "adpamo";
+      $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+        $username = "uoda79man3frv2ey";
+        $password = "7j6L6wOWNiGBz68Bp5TQ";
+        $dbname = "bitkvtrcb83u4zewwxlm";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -48,10 +48,11 @@ class Clients {
       echo $this->client_id;
       
       
-      $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "adpamo";
+       $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+        $username = "uoda79man3frv2ey";
+        $password = "7j6L6wOWNiGBz68Bp5TQ";
+        $dbname = "bitkvtrcb83u4zewwxlm";
+
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -71,10 +72,11 @@ class Clients {
         $conn->close();
   }
   public function edit(){
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "adpamo";
+       $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+        $username = "uoda79man3frv2ey";
+        $password = "7j6L6wOWNiGBz68Bp5TQ";
+        $dbname = "bitkvtrcb83u4zewwxlm";
+
       
       $client_id_details = $_GET['client_id_details'];
       $client_name_details = $_GET['client_name_details'];
