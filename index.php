@@ -225,6 +225,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                                   ///$scope.insert_successful = false;
                       alert("You Ordered Successfully");
                           });
+          $scope.insert_successful = false;
           
           
                   
