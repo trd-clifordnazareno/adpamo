@@ -85,6 +85,66 @@ class Order{
         }
         $conn->close();
   }
+  
+  
+  public function insert_order(){
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "adpamo";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        }
+        
+        
+        $selectedOption=$_GET['selectedOption'];
+        $selectedOptioncorporate=$_GET['selectedOptioncorporate'];
+        $complete_from_date=$_GET['complete_from_date'];
+        $typeoftarp=$_GET['typeoftarp'];
+        $tarpquantity=$_GET['tarpquantity'];
+        $size_y=$_GET['size_y'];
+        $size_x=$_GET['size_x'];
+        $price=$_GET['price'];
+        $get_total_price=$_GET['get_total_price'];
+        $projectname=$_GET['projectname'];
+        $type_of_measurement=$_GET['type_of_measurement'];
+        
+        
+        
+        
+        
+        
+        
+        $sql = "SELECT * FROM clients_tbl where client_id = '$selectedOptioncorporate' and enabled='1'";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                    $client_name = $row["client_name"];    
+            }
+        }
+        
+        
+        
+        
+        
+                                
+
+        $sql = "INSERT INTO order_info_tbl (client_id, client_name, type_order, order_date, item_details_name, quantity, price_per_size, total_price, tarp_size_y, tarp_size_x, project_name, enabled)
+                                    VALUES ('$selectedOptioncorporate', '$client_name', '$selectedOption', '$complete_from_date', '$typeoftarp', '$tarpquantity', '$price', '$get_total_price', '$size_y', '$size_x', '$projectname', 1)";
+
+        if ($conn->query($sql) === TRUE) {
+          echo "New record created successfully";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        $conn->close();
+    }
 }
 
 
@@ -102,4 +162,15 @@ if(isset($_GET['client_type'])){
         $order = new Order();
         $order->get_client_type("Regular");
     }
+}
+
+
+
+
+if(isset($_GET['operation_type'])){
+    if($_GET['operation_type'] == "insert_order"){
+        $order = new Order();
+        $order->insert_order("Corporate");
+    }
+    
 }
