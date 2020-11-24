@@ -210,7 +210,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     $scope.msg = [$selectedOption, $selectedOptioncorporate,$complete_from_date, $typeoftarp, $tarpquantity, $size_y, $size_x, $price, $get_total_price, $projectname, $type_of_measurement];
           
           
-                    $http.get("http://localhost/adpamo/controller/order.php?operation_type=insert_order&&selectedOption="+$selectedOption+
+                    $http.get("http://adsportalsamplweweb.herokuapp.com/controller/order.php?operation_type=insert_order&&selectedOption="+$selectedOption+
                                       "&&selectedOptioncorporate="+$selectedOptioncorporate+
                                       "&&complete_from_date="+$complete_from_date+
                                       "&&typeoftarp="+$typeoftarp+
