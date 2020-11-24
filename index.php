@@ -105,6 +105,11 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
         $scope.select_clients_corporate = true;
         $scope.select_clients_regular = true;
         $scope.select_clients_walkin = true;
+      
+      
+      
+      
+        $scope.insert_successful = true;
         
         $scope.updateSelected = function(selectedOption){
             
@@ -203,6 +208,27 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     
                     
                     $scope.msg = [$selectedOption, $selectedOptioncorporate,$complete_from_date, $typeoftarp, $tarpquantity, $size_y, $size_x, $price, $get_total_price, $projectname, $type_of_measurement];
+          
+          
+                    $http.get("http://localhost/adpamo/controller/order.php?operation_type=insert_order&&selectedOption="+$selectedOption+
+                                      "&&selectedOptioncorporate="+$selectedOptioncorporate+
+                                      "&&complete_from_date="+$complete_from_date+
+                                      "&&typeoftarp="+$typeoftarp+
+                                      "&&tarpquantity="+$tarpquantity+
+                                      "&&size_y="+$size_y+
+                                      "&&size_x="+$size_x+
+                                      "&&price="+$price+
+                                      "&&get_total_price="+$get_total_price+
+                                      "&&projectname="+$projectname+
+                                      "&&type_of_measurement="+$type_of_measurement)
+                              .then(function (response) {
+                                  $scope.insert_successful = false;
+                          });
+          
+          
+                  $scope.close_successful = function(){
+                    $scope.insert_successful = true;
+                  }
             
             
         }
