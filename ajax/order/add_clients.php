@@ -1,4 +1,10 @@
 <div class="card card-primary">
+  <div class="alert alert-success alert-dismissible" ng-hide="insert_successful" ng-click="close_successful()">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                  <h5><i class="icon fas fa-check"></i> Alert!</h5>
+                  Success alert preview. This alert is dismissable.
+                </div>
+  
               <div class="card-header">
                 <h3 class="card-title">Add Client</h3>
               </div>
