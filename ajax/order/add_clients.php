@@ -32,7 +32,7 @@
                         <div class="form-group">
                         
                             <select class="form-control" ng-model="selectedOptioncorporate">
-                          <option ng-repeat="x in corporate_list" value="{{x.client_name}}">{{x.client_name}}</option>
+                          <option ng-repeat="x in corporate_list" value="{{x.client_id}}">{{x.client_name}}</option>
                           
                         </select>
                       </div>
@@ -45,7 +45,7 @@
                         <div class="form-group">
                         
                         <select class="form-control" ng-model="selectedOptioncorporate">
-                          <option ng-repeat="x in corporate_list" value="{{x.client_name}}">{{x.client_name}}</option>
+                          <option ng-repeat="x in corporate_list" value="{{x.client_id}}">{{x.client_name}}</option>
                           
                         </select>
                       </div>
