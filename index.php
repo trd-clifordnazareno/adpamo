@@ -223,9 +223,8 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                                       "&&type_of_measurement="+$type_of_measurement)
                               .then(function (response) {
                                   ///$scope.insert_successful = false;
-                      alert("You Ordered Successfully");
                           });
-          $scope.insert_successful = false;
+                                     $scope.insert_successful = false;
           
           
                   
