@@ -201,7 +201,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     $compute_size_and_price = $compute_size_y_$size_x * $price;
                     
                     $get_total_price = $compute_size_and_price * $quantity;
-                    alert($get_total_price);
+                    ///alert($get_total_price);
                     
                     
                     
