@@ -151,7 +151,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
         $scope.updateSelectedcorporate = function(a){
             alert(a);
         }
-        $scope.clickOptioncorporate = function(selectedOption, selectedOptioncorporate, dateset, typeoftarp, tarpquantity, tarpsizex, tarpsizey, tarpprice, tarppricetotal, projectname, type_of_measurement,  layoutoption, artistname){
+        $scope.clickOptioncorporate = function(selectedOption, selectedOptioncorporate, dateset, typeoftarp, tarpquantity, tarpsizex, tarpsizey, tarpprice, tarppricetotal, projectname, type_of_measurement,  layoutoption, artistname, walkininputclient){
             
                     
                     ///parameter variables
@@ -163,6 +163,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     $type_of_measurement = type_of_measurement;
                     $layoutoption = layoutoption;
                     $artistname = artistname;
+                    $walkininputclient = walkininputclient;
                     ///end of parameter variables
                     
             
@@ -224,7 +225,8 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                                       "&&projectname="+$projectname+
                                       "&&type_of_measurement="+$type_of_measurement+
                                       "&&layoutoption="+$layoutoption+
-                                      "&&artistname="+$artistname)
+                                      "&&artistname="+$artistname+
+                                      "&&walkininputclient="+walkininputclient)
                               .then(function (response) {
                                   ///$scope.insert_successful = false;
                           });
