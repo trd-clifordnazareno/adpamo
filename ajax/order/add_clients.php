@@ -171,7 +171,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary" ng-click="clickOptioncorporate(selectedOption, selectedOptioncorporate, setdate, typeoftarp, tarpquantity, tarpsizex, tarpsizey, tarpprice, tarppricetotal, projectname, type_of_measurement)">Submit</button>
+                    <button type="submit" class="btn btn-primary" ng-click="clickOptioncorporate(selectedOption, selectedOptioncorporate, setdate, typeoftarp, tarpquantity, tarpsizex, tarpsizey, tarpprice, tarppricetotal, projectname, type_of_measurement, layoutoption, artistname)">Submit</button>
                 </div>
               </form>
             </div>
