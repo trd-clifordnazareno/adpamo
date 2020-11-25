@@ -114,6 +114,7 @@ class Order{
         $type_of_measurement=$_GET['type_of_measurement'];
         $layoutoption = $_GET['layoutoption'];
         $artistname = $_GET['artistname'];
+        $walkininputclient = $_GET['walkininputclient'];
         
         
         
@@ -128,6 +129,8 @@ class Order{
             while($row = $result->fetch_assoc()) {
                     $client_name = $row["client_name"];    
             }
+        }else{
+            $client_name = $walkininputclient;    
         }
         
         
