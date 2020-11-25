@@ -130,6 +130,7 @@ class Order{
                     $client_name = $row["client_name"];    
             }
         }else{
+            $selectedOptioncorporate = 0;
             $client_name = $walkininputclient;    
         }
         
