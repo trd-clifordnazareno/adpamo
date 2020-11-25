@@ -53,7 +53,7 @@
                   </div>
                   <div class="form-group" ng-hide="select_clients_walkin">
                     <label>Wak In Clients Name</label>
-                    <input type="text" class="form-control" id="Clients_name" placeholder="Enter Clients Name" value="{{clients_name}}" ng-model="selectedOptioncorporate">
+                    <input type="text" class="form-control" id="Clients_name" placeholder="Enter Clients Name" value="{{clients_name}}" ng-model="walkininputclient">
                   </div>
                   <div class="form-group">
                    
@@ -171,7 +171,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary" ng-click="clickOptioncorporate(selectedOption, selectedOptioncorporate, setdate, typeoftarp, tarpquantity, tarpsizex, tarpsizey, tarpprice, tarppricetotal, projectname, type_of_measurement, layoutoption, artistname)">Submit</button>
+                    <button type="submit" class="btn btn-primary" ng-click="clickOptioncorporate(selectedOption, selectedOptioncorporate, setdate, typeoftarp, tarpquantity, tarpsizex, tarpsizey, tarpprice, tarppricetotal, projectname, type_of_measurement, layoutoption, artistname, walkininputclient)">Submit</button>
                 </div>
               </form>
             </div>
