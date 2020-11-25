@@ -140,6 +140,26 @@
                     <input type="text" class="form-control" id="tarppricetotal" placeholder="Total Price" ng-init="tarppricetotal" value="{{(((tarpsizey / 2.54) * (tarpsizex/2.54)) * tarpprice) * tarpquantity}}" disabled="" ng-if="type_of_measurement == 'centimeter'">
                     <input type="text" class="form-control" id="tarppricetotal" placeholder="Total Price" ng-init="tarppricetotal" value="{{(((tarpsizey * 39.37) * (tarpsizex*39.37)) * tarpprice) * tarpquantity}}" disabled="" ng-if="type_of_measurement == 'meter'">
                   </div>
+                  
+                  
+                  <div class="form-group">
+                        <label> Design Layout Option</label>
+                        <div class="form-group">
+                        
+                        <select class="form-control" ng-model="layoutoption">
+                          <option value="withlayout">With Layout</option>
+                          <option value="none">None</option>
+                          
+                        </select>
+                      </div>
+                    
+                  </div>
+                    
+                    <div class="form-group">
+                    <label>Name Of Artist</label>
+                    <input type="text" class="form-control" id="artistname" placeholder="Enter Name of Artist" ng-model="artistname">
+                  </div>
+                  
                     <div class="form-group">
                     <label>Project Name</label>
                     <input type="text" class="form-control" id="projectname" placeholder="Enter Project Name" ng-model="projectname">
