@@ -287,7 +287,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     $complete_to_date = $complete_to_date;
                     
                     
-                    $http.get("http://localhost/adpamo/controller/sales.php?operation_type=get_sales&&datefrom="+$complete_from_date+"&&dateto="+$complete_to_date)
+                    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/sales.php?operation_type=get_sales&&datefrom="+$complete_from_date+"&&dateto="+$complete_to_date)
                     .then(function (response) {
 
                         //alert(response.data)
