@@ -20,10 +20,10 @@ class Sales{
       $dateto =  $_GET['dateto'];
       
       
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "adpamo";
+      $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+      $username = "uoda79man3frv2ey";
+      $password = "7j6L6wOWNiGBz68Bp5TQ";
+      $dbname = "bitkvtrcb83u4zewwxlm";
 
       // Create connection
       $conn = new mysqli($servername, $username, $password, $dbname);
