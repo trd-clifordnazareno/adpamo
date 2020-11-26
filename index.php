@@ -36,8 +36,9 @@ app.config(function($routeProvider) {
         templateUrl : "ajax/order/add_clients.php",
         controller: "order_clients_controller"
     })
-    .when("/blue", {
-        templateUrl : "main.htm"
+    .when("/sales", {
+        templateUrl : "ajax/sales/sales_report.php",
+        controller: "sales_controller"
     }).otherwise({
         redirectTo: '/'
     });;
@@ -243,5 +244,58 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     $scope.insert_successful = true;
                   }
 
+    });
+  
+  
+  
+  
+  app.controller('sales_controller', function ($scope, $http, $location, $routeParams){
+        $scope.get_basic_report = function(datefrom, dateto){
+            $dfrom = new Date(datefrom);
+                    $dfromyear = $dfrom.getFullYear();
+                    $dfromyear_to_string = $dfromyear.toString();
+
+                    $dfrommonth = $dfrom.getMonth() + 1;
+                    $dfrommonth_to_string = $dfrommonth.toString();
+
+                    $dfromday = $dfrom.getDate();
+                    $dfromday_to_string = $dfromday.toString();
+
+                    $exact_year = $dfromyear_to_string;
+                    $exact_month = $dfrommonth_to_string;
+                    $exact_day = $dfromday_to_string;
+                    $complete_from_date = $exact_year + "-" + $exact_month + "-" + $exact_day;
+                    $complete_from_date = $complete_from_date;
+                    
+                    
+                    
+                    
+                    $dto= new Date(dateto);
+                    $dtoyear = $dto.getFullYear();
+                    $dtoyear_to_string = $dtoyear.toString();
+
+                    $dtomonth = $dto.getMonth() + 1;
+                    $dtomonth_to_string = $dtomonth.toString();
+
+                    $dtoday = $dto.getDate();
+                    $dtoday_to_string = $dtoday.toString();
+
+                    $exact_year = $dtoyear_to_string;
+                    $exact_month = $dtomonth_to_string;
+                    $exact_day = $dtoday_to_string;
+                    $complete_to_date = $exact_year + "-" + $exact_month + "-" + $exact_day;
+                    $complete_to_date = $complete_to_date;
+                    
+                    
+                    $http.get("http://localhost/adpamo/controller/sales.php?operation_type=get_sales&&datefrom="+$complete_from_date+"&&dateto="+$complete_to_date)
+                    .then(function (response) {
+
+                        //alert(response.data)
+                        //window.location = "http://localhost/adpamo";
+                        $scope.sales_all = response.data;
+                    });
+                    
+                    
+        }
     });
 </script>
