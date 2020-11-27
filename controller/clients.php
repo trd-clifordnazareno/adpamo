@@ -104,6 +104,35 @@ class Clients {
 
         $conn->close();
   }
+  public function add_new_clients(){
+        $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+        $username = "uoda79man3frv2ey";
+        $password = "7j6L6wOWNiGBz68Bp5TQ";
+        $dbname = "bitkvtrcb83u4zewwxlm";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        }
+        
+        
+        $clientname=$_GET['clientname'];
+            $clientcontact=$_GET['clientcontact'];
+            $clientaddress=$_GET['clientaddress'];
+            $clienttype=$_GET['clienttype'];
+      $sql = "INSERT INTO clients_tbl (client_name, address, contact, type_client, enabled)
+                                    VALUES ('$clientname', '$clientcontact', '$clientaddress', '$clienttype', 1)";
+
+        if ($conn->query($sql) === TRUE) {
+          echo "New Client created successfully";
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        $conn->close();
+  }
 }
 
 
@@ -119,4 +148,8 @@ if(isset($_GET['load_clients'])){
 }if(isset($_GET['operation_type'])){
     $client = new Clients();
     $client->edit();
+}
+if(isset($_GET['add_clients'])){
+    $client = new Clients();
+    $client->add_new_clients();
 }
