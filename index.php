@@ -292,7 +292,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
 
                         //alert(response.data)
                         //window.location = "http://localhost/adpamo";
-                        $scope.sales_all = response.data;
+                        $scope.sales_all = response.data.sales_table;
                         $scope.total_price_sale = response.data.total_price_sale;
                         $scope.total_sales_corporate = response.data.total_sales_corporate;
                         $scope.total_sales_regular = response.data.total_sales_regular;
