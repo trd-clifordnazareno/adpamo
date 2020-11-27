@@ -130,3 +130,47 @@
 
 
 
+<div class="callout callout-info">
+              <h5><i class="fas fa-info"></i> Report Table:</h5>
+              <p class="lead"></p>
+<div class="table-responsive">
+                    <table class="table">
+                      <tbody><tr>
+                        <th style="width:30%">Total Sale:</th>
+                        <td><span>&#8369;</span>{{total_price_sale}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Corporate Sales:</th>
+                        <td><span>&#8369;</span>{{total_sales_corporate}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Sales Regular:</th>
+                        <td><span>&#8369;</span>{{total_sales_regular}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Sales Walkin:</th>
+                        <td><span>&#8369;</span>{{total_sales_walkin}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Sales Of Tarp 10 OZ By Size:</th>
+                        <td><span>&#8369;</span>{{total_tarp_size_ten_y * quantity_tarp_size_ten}}x{{total_tarp_size_ten_x * quantity_tarp_size_ten}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Sales Of Tarp 13 OZ By Size:</th>
+                        <td><span>&#8369;</span>{{total_tarp_size_thirteen_y * quantity_tarp_size_thirteen}}x{{total_tarp_size_thirteen_x * quantity_tarp_size_thirteen}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Sales Of Tarp 10 OZ:</th>
+                        <td><span>&#8369;</span>{{total_tarp_size_ten_sale}}</td>
+                      </tr>
+                      <tr>
+                        <th>Total Sales Of Tarp 13 OZ:</th>
+                        <td><span>&#8369;</span>{{total_tarp_size_thirteen_sale}}</td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+            </div>
+
+
+
+
