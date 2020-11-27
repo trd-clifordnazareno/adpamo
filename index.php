@@ -39,7 +39,12 @@ app.config(function($routeProvider) {
     .when("/sales", {
         templateUrl : "ajax/sales/sales_report.php",
         controller: "sales_controller"
-    }).otherwise({
+    })
+    .when("/add_clients", {
+        templateUrl : "ajax/clients/add_clients.php",
+        controller: "get_clients_model"
+    })
+    .otherwise({
         redirectTo: '/'
     });;
 });
@@ -47,10 +52,27 @@ app.config(function($routeProvider) {
 
 
 app.controller('get_clients_model', function ($scope, $http, $location, $routeParams) {
+  
+  
+  $scope.add_client = true;
         $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?load_clients=1")
                 .then(function (response) {
                     $scope.clients_details = response.data;
                 });
+  
+  
+  $scope.add_new_client = function(clientname, clientcontact, clientaddress, clienttype){
+    $http.get("http://localhost/adpamo/controller/clients.php?add_clients=1&&clientname="+clientname+
+            "&&clientcontact="+clientcontact+
+            "&&clientaddress="+clientaddress+
+            "&&clienttype="+clienttype)
+                .then(function (response) {
+                    $scope.add_client = false;
+                });
+}
+$scope.hide_successful = function(){
+    $scope.add_client = true;
+}
         
 
 $scope.delete_clients = function(a){
