@@ -69,6 +69,7 @@ app.controller('get_clients_model', function ($scope, $http, $location, $routePa
                 .then(function (response) {
                     $scope.add_client = false;
                 });
+    alert();
 }
 $scope.hide_successful = function(){
     $scope.add_client = true;
