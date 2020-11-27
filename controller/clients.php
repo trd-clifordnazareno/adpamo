@@ -122,8 +122,8 @@ class Clients {
             $clientcontact=$_GET['clientcontact'];
             $clientaddress=$_GET['clientaddress'];
             $clienttype=$_GET['clienttype'];
-      $sql = "INSERT INTO clients_tbl (client_name, address, contact, type_client, enabled)
-                                    VALUES ('$clientname', '$clientcontact', '$clientaddress', '$clienttype', 1)";
+      $sql = "INSERT INTO clients_tbl (job_order_no, client_name, address, contact, type_client, enabled)
+                                    VALUES ('', '$clientname', '$clientcontact', '$clientaddress', '$clienttype', 1)";
 
         if ($conn->query($sql) === TRUE) {
           echo "New Client created successfully";
