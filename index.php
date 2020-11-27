@@ -62,7 +62,7 @@ app.controller('get_clients_model', function ($scope, $http, $location, $routePa
   
   
   $scope.add_new_client = function(clientname, clientcontact, clientaddress, clienttype){
-    $http.get("http://localhost/adpamo/controller/clients.php?add_clients=1&&clientname="+clientname+
+    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?add_clients=1&&clientname="+clientname+
             "&&clientcontact="+clientcontact+
             "&&clientaddress="+clientaddress+
             "&&clienttype="+clienttype)
