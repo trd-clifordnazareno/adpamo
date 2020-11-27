@@ -293,6 +293,18 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                         //alert(response.data)
                         //window.location = "http://localhost/adpamo";
                         $scope.sales_all = response.data;
+                        $scope.total_price_sale = response.data.total_price_sale;
+                        $scope.total_sales_corporate = response.data.total_sales_corporate;
+                        $scope.total_sales_regular = response.data.total_sales_regular;
+                        $scope.total_sales_walkin = response.data.total_sales_walkin;
+                        $scope.total_tarp_size_ten_y = response.data.total_tarp_size_ten_y;
+                        $scope.total_tarp_size_ten_x = response.data.total_tarp_size_ten_x;
+                        $scope.total_tarp_size_thirteen_y = response.data.total_tarp_size_thirteen_y;
+                        $scope.total_tarp_size_thirteen_x = response.data.total_tarp_size_thirteen_x;
+                        $scope.quantity_tarp_size_ten = response.data.quantity_tarp_size_ten;
+                        $scope.quantity_tarp_size_thirteen = response.data.quantity_tarp_size_thirteen;
+                        $scope.total_tarp_size_ten_sale = response.data.total_tarp_size_ten_sale;
+                        $scope.total_tarp_size_thirteen_sale = response.data.total_tarp_size_thirteen_sale;
                     });
                     
                     
