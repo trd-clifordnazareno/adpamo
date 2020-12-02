@@ -1,3 +1,5 @@
+<button type="submit" class="btn btn-primary" ng-click="btn_add_clients()">Add Client</button>
+<button type="submit" class="btn btn-primary" ng-click="btn_view_clients()">View Client</button>
 <div class="alert alert-success alert-dismissible" ng-hide="add_client">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true" ng-click="hide_successful()">X</button>
                   <h5><i class="icon fas fa-check"></i> New Client Successfully Created</h5>
