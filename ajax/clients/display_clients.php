@@ -1,5 +1,7 @@
 <button type="submit" class="btn btn-primary" ng-click="btn_add_clients()">Add Client</button>
 <button type="submit" class="btn btn-primary" ng-click="btn_view_clients()">View Client</button>
+</br>
+</br>
 
 <div class="card">
               <div class="card-header">
