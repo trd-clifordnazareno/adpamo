@@ -74,6 +74,16 @@ app.controller('get_clients_model', function ($scope, $http, $location, $routePa
 $scope.hide_successful = function(){
     $scope.add_client = true;
 }
+  
+  
+  
+  
+  $scope.btn_view_clients = function(){
+    $location.path("/");  
+}
+$scope.btn_add_clients = function(){
+    $location.path("/add_clients");
+}
         
 
 $scope.delete_clients = function(a){
