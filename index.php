@@ -52,9 +52,7 @@ app.config(function($routeProvider) {
 
 
 app.controller('get_clients_model', function ($scope, $http, $location, $routeParams) {
-  $(document).ready(function() {
-    $('#example').DataTable();
-} );
+  
   
   $scope.add_client = true;
         $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?load_clients=1")
@@ -341,9 +339,7 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                         $scope.total_tarp_size_ten_sale = response.data.total_tarp_size_ten_sale;
                         $scope.total_tarp_size_thirteen_sale = response.data.total_tarp_size_thirteen_sale;
                     });
-                    $(document).ready(function() {
-    $('#example').DataTable();
-} );
+                    
                     
         }
     });
