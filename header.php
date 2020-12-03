@@ -1,7 +1,7 @@
 <html style="height: auto;"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Blank Page</title>
+  <title>Adpam</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -140,8 +140,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="template/index3.html" class="brand-link">
-      <img src="template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <!--<img src="template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">-->
+      <span class="brand-text font-weight-light">Adpamo</span>
     </a>
 
     <!-- Sidebar -->
