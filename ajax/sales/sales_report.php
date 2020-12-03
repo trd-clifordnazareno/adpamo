@@ -93,7 +93,7 @@
                       
                   </thead>
                   <tbody>
-                  <tr role="row" class="odd" dir-paginate="x in sales_all | filter : search | itemsPerPage: 10">
+                  <tr role="row" class="odd" dir-paginate="x in sales_all | itemsPerPage: 10">
                     <td tabindex="0" class="sorting_1">{{x.order_date}}</td>
                     <td>{{x.client_name}}</td>
                     <td>{{x.type_order}} </td>
