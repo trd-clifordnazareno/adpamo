@@ -129,7 +129,7 @@
             </div>
 
 
-<dir-pagination-controls></dir-pagination-controls>
+
 
 
 
