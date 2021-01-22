@@ -115,6 +115,7 @@ class Order{
         $layoutoption = $_GET['layoutoption'];
         $artistname = $_GET['artistname'];
         $walkininputclient = $_GET['walkininputclient'];
+    $ordersize = $_GET['ordersize'];
         
         
         
@@ -140,8 +141,8 @@ class Order{
         
                                 
 
-        $sql = "INSERT INTO order_info_tbl (client_id, client_name, type_order, order_date, item_details_name, quantity, price_per_size, total_price, tarp_size_y, tarp_size_x, project_name, layoutoption, artistname, enabled)
-                                    VALUES ('$selectedOptioncorporate', '$client_name', '$selectedOption', '$complete_from_date', '$typeoftarp', '$tarpquantity', '$price', '$get_total_price', '$size_y', '$size_x', '$projectname', '$layoutoption', '$artistname', 1)";
+        $sql = "INSERT INTO order_info_tbl (client_id, client_name, type_order, order_date, ordersize, item_details_name, quantity, price_per_size, total_price, tarp_size_y, tarp_size_x, project_name, layoutoption, artistname, measuretype, enabled)
+                                    VALUES ('$selectedOptioncorporate', '$client_name', '$selectedOption', '$complete_from_date', '$ordersize', '$typeoftarp', '$tarpquantity', '$price', '$get_total_price', '$size_y', '$size_x', '$projectname', '$layoutoption', '$artistname', '$type_of_measurement', 1)";
 
         if ($conn->query($sql) === TRUE) {
           echo "New record created successfully";
