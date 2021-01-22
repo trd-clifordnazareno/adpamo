@@ -227,9 +227,6 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
           
           $ordersize =  $size_y + " x " + $size_x;
           
-          
-          
-          $ordersize =  $size_y + " x " + $size_x;
                     
                     
                     if($type_of_measurement == "foot"){
