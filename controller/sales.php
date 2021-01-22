@@ -56,7 +56,9 @@ class Sales{
                     'project_name' => $row['project_name'],
                     'layoutoption' => $row['layoutoption'],
                     'layoutoption' => $row['layoutoption'],
-                    'artistname' => $row['artistname']
+                    'artistname' => $row['artistname'],
+            'measuretype' => $row['measuretype'],
+              'ordersize' => $row['ordersize']
             );
         }
         $x['sales_table'] = $_page;
