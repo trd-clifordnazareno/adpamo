@@ -223,6 +223,10 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                     $price = tarpprice;
                     $quantity = tarpquantity;
                     ///end of parameter variables
+          
+          
+          
+          $ordersize =  $size_y + " x " + $size_x;
                     
                     
                     if($type_of_measurement == "foot"){
@@ -260,7 +264,8 @@ $scope.edit_clients_form = function(clients_id, clients_name, clients_address, c
                                       "&&type_of_measurement="+$type_of_measurement+
                                       "&&layoutoption="+$layoutoption+
                                       "&&artistname="+$artistname+
-                                      "&&walkininputclient="+walkininputclient)
+                                      "&&walkininputclient="+walkininputclient+
+                             "&&ordersize="+$ordersize)
                               .then(function (response) {
                                   ///$scope.insert_successful = false;
                           });
