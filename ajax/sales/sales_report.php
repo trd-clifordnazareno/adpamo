@@ -81,6 +81,7 @@
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">type_order</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">item_details_name</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">quantity</th>
+                    <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">order size</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">price_per_size</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">total_price</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">tarp_size_y</th>
@@ -88,6 +89,7 @@
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">project_name</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">layoutoption</th>
                       <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">artistname</th>
+                    <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">measure type</th>
                   </tr>
                       
                       
@@ -99,6 +101,7 @@
                     <td>{{x.type_order}} </td>
                     <td>{{x.item_details_name}} </td>
                     <td>{{x.quantity}} </td>
+                    <td>{{x.ordersize}} </td>
                     <td>{{x.price_per_size}} </td>
                     <td>{{x.total_price}} </td>
                     <td>{{x.tarp_size_y}} </td>
@@ -106,6 +109,7 @@
                     <td>{{x.project_name}} </td>
                     <td>{{x.layoutoption}} </td>
                     <td>{{x.artistname}} </td>
+                    <td>{{x.measuretype}} </td>
                     <!--<td>
                         <a class="btn btn-app" href="<?php ///echo "http://" . $_SERVER['SERVER_NAME'] . "/adpamo/clients/actions/update/{{client.client_id}}"; ?>" ng-click="edit_clients_form(client.client_id, client.client_name, client.address, client.contact)">
                   <i class="fas fa-edit"></i> Edit
