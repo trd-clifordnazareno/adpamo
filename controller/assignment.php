@@ -280,16 +280,54 @@ function test_get_cpu(){
 echo json_encode($x);
 }
 
+  
+}
 
 
 
 
+if(isset($_GET['test_view_chassis'])){
+    if($_GET['test_view_chassis'] == "view_chassis"){
+        $order = new Assignment();
+        $order->test_view_chassis();
+    }
+    
+}
+if(isset($_GET['test_chassis_title_and_price'])){
+    
+        $order = new Assignment();
+        $order->test_chassis_title_and_price($_GET['test_chassis_title_and_price']);
+    
+    
+}
+if(isset($_GET['test_get_memory_cpu_price'])){
+    
+  $order = new Assignment();
+  $order->view_item_price($_GET['test_get_memory_cpu_price']);
 
 
+}
+if(isset($_GET['test_get_memory'])){
+    
+  $order = new Assignment();
+  $order->test_get_memory();
 
 
+}
+if(isset($_GET['test_get_cpu'])){
+    
+  $order = new Assignment();
+  $order->test_get_cpu();
 
 
+}
+/*if(isset($_GET['test_view_memory'])){
+    
+  $order = new Assignment();
+  $order->test_view_memory($_GET['test_view_memory']);
+
+
+}*/
 
 
 /*
@@ -363,26 +401,7 @@ function view_motherboard_price($motherboard){
 }*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  function get_sales(){
+function get_sales(){
       $datefrom = $_GET['datefrom'];
       $dateto =  $_GET['dateto'];
       
@@ -494,57 +513,4 @@ function view_motherboard_price($motherboard){
         }
         $conn->close();
   }
-  
-  
-  
-                    
-  
-  
-  
-}
 
-
-
-
-if(isset($_GET['test_view_chassis'])){
-    if($_GET['test_view_chassis'] == "view_chassis"){
-        $order = new Assignment();
-        $order->test_view_chassis();
-    }
-    
-}
-if(isset($_GET['test_chassis_title_and_price'])){
-    
-        $order = new Assignment();
-        $order->test_chassis_title_and_price($_GET['test_chassis_title_and_price']);
-    
-    
-}
-if(isset($_GET['test_get_memory_cpu_price'])){
-    
-  $order = new Assignment();
-  $order->view_item_price($_GET['test_get_memory_cpu_price']);
-
-
-}
-if(isset($_GET['test_get_memory'])){
-    
-  $order = new Assignment();
-  $order->test_get_memory();
-
-
-}
-if(isset($_GET['test_get_cpu'])){
-    
-  $order = new Assignment();
-  $order->test_get_cpu();
-
-
-}
-/*if(isset($_GET['test_view_memory'])){
-    
-  $order = new Assignment();
-  $order->test_view_memory($_GET['test_view_memory']);
-
-
-}*/
