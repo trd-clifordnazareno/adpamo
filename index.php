@@ -55,7 +55,7 @@ app.config(function($routeProvider) {
 
 
 app.controller('test', function($scope, $http, $location, $routeParams){
-    $http.get("https://localhost/adpamo-master/controller/assignment.php?test_view_chassis=view_chassis")
+    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/assignment.php?test_view_chassis=view_chassis")
                 .then(function (response) {
                     $scope.chassises = response.data.chassis;
                     $scope.motherboard_specs_memory = response.data.view_memory_and_cpu;
@@ -63,11 +63,11 @@ app.controller('test', function($scope, $http, $location, $routeParams){
                 });
 
 
-                $http.get("https://localhost/adpamo-master/controller/assignment.php?test_get_memory=get_memory")
+                $http.get("https://adsportalsamplweweb.herokuapp.com/controller/assignment.php?test_get_memory=get_memory")
                 .then(function (response) {
                     $scope.memory_specs = response.data.memory_specs;
                 });
-                $http.get("https://localhost/adpamo-master/controller/assignment.php?test_get_cpu=get_cpu")
+                $http.get("https://adsportalsamplweweb.herokuapp.com/controller/assignment.php?test_get_cpu=get_cpu")
                 .then(function (response) {
                     $scope.cpu_specs = response.data.cpu_specs;
                 });
@@ -77,7 +77,7 @@ app.controller('test', function($scope, $http, $location, $routeParams){
 
                 $scope.get_chassis_id = function($_name){
                     
-                    $http.get("https://localhost/adpamo-master/controller/assignment.php?test_chassis_title_and_price="+$_name)
+                    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/assignment.php?test_chassis_title_and_price="+$_name)
                     .then(function (response) {
                         $scope.title = response.data.chassis_title;
                         $scope.motherboard = response.data.motherboard;
@@ -100,13 +100,13 @@ app.controller('test', function($scope, $http, $location, $routeParams){
                 }
 
                 $scope.get_memory = function($memory){
-                    $http.get("https://localhost/adpamo-master/controller/assignment.php?test_get_memory_cpu_price="+$memory)
+                    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/assignment.php?test_get_memory_cpu_price="+$memory)
                     .then(function (response) {
                         $scope.item_memory_price = response.data.item_memory_price;
                     });
                 }
                 $scope.get_cpu = function($cpu){
-                    $http.get("https://localhost/adpamo-master/controller/assignment.php?test_get_memory_cpu_price="+$cpu)
+                    $http.get("https://adsportalsamplweweb.herokuapp.com/controller/assignment.php?test_get_memory_cpu_price="+$cpu)
                     .then(function (response) {
                         $scope.item_cpu_family = response.data.item_memory_price;
                     });
@@ -126,7 +126,7 @@ app.controller('get_clients_model', function ($scope, $http, $location, $routePa
       $scope.names = $_name;
   }
   $scope.add_client = true;
-        $http.get("https://localhost/adpamo-master/controller/clients.php?load_clients=1")
+        $http.get("https://adsportalsamplweweb.herokuapp.com/controller/clients.php?load_clients=1")
                 .then(function (response) {
                     $scope.clients_details = response.data;
                 });
