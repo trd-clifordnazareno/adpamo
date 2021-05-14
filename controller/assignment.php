@@ -23,10 +23,10 @@ function test_chassis_title_and_price($motherboard){
 
 
 function view_chassis($motherboard){
-    $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+    $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
     // Create connection
@@ -75,10 +75,10 @@ function view_chassis($motherboard){
 
 
 function view_motherboard_name($motherboard){
-  $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+  $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
   // Create connection
@@ -111,10 +111,10 @@ function view_motherboard_name($motherboard){
 
 
 function view_specs_price($data){
-  $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+  $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
   // Create connection
@@ -145,10 +145,10 @@ function view_specs_price($data){
 }
 }
 function test_view_memory_and_cpu(){
-  $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+  $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
     // Create connection
@@ -180,10 +180,10 @@ function test_view_memory_and_cpu(){
 }
 
 function load_chassis(){
-  $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+  $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
     // Create connection
@@ -216,10 +216,10 @@ function load_chassis(){
   echo json_encode($x);
 }
 function test_get_memory(){
-  $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+  $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
     // Create connection
@@ -248,10 +248,10 @@ function test_get_memory(){
   echo json_encode($x);
 }
 function test_get_cpu(){
- $servername = "bitkvtrcb83u4zewwxlm-mysql.services.clever-cloud.com";
+ $servername = "brib8pffxfwodem76tm5-mysql.services.clever-cloud.com";
       $username = "uoda79man3frv2ey";
       $password = "7j6L6wOWNiGBz68Bp5TQ";
-      $dbname = "bitkvtrcb83u4zewwxlm";
+      $dbname = "brib8pffxfwodem76tm5";
 
 
   // Create connection
